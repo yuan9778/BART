@@ -16,37 +16,31 @@
 
     // load stations xml
     $xml = simplexml_load_file('http://api.bart.gov/api/stn.aspx?cmd=stns&key=' . KEY);
-    if ($xml === false)
-    {
+    if ($xml === false) {
         trigger_error('Could not connect to BART API', E_USER_ERROR);
     }
 
     $stations = $xml->stations->station;
 
     // insert stations
-    foreach ($stations as $station)
-    {
+    foreach ($stations as $station) {
         query("INSERT INTO stations (abbr, name, latitude, longitude) VALUES (?, ?, ?, ?)",
             $station->abbr, $station->name, $station->gtfs_latitude, $station->gtfs_longitude);
     }
 
     // load routes
     $xml = simplexml_load_file('http://api.bart.gov/api/route.aspx?cmd=routes&key=' . KEY);
-    if ($xml === false)
-    {
+    if ($xml === false) {
         trigger_error('Could not connect to BART API', E_USER_ERROR);
     }
 
     $routes = $xml->routes->route;
 
-    foreach ($routes as $route)
-    {
-
+    foreach ($routes as $route) {
         // load routeinfo xml
         $routeinfo = simplexml_load_file('http://api.bart.gov/api/route.aspx?' .
             'cmd=routeinfo&route=' . $route->number . '&key=' . KEY);
-        if ($routeinfo === false)
-        {
+        if ($routeinfo === false) {
             trigger_error('Could not connect to BART API', E_USER_ERROR);
         }
 
@@ -55,8 +49,7 @@
 
         // build array with all stations on a specific route. 
         $config = [];
-        foreach ($stations as $station)
-        {
+        foreach ($stations as $station) {
             $config[] = $station;
         }
 
