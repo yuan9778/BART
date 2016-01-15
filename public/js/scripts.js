@@ -19,19 +19,10 @@ $(document).ready(function() {
 
     // display selected route
     $("#route_select").change(function() {
-
         var routeNumber = $("#route_select").val();
         displayRoute(routeNumber);
     });
 });
-
-$("#help").click(function() {
-	alert("How to use BART?");
-
-});
-
-
-
 
 /**
  * Draws a google map.
@@ -50,7 +41,6 @@ function drawMap() {
         },
         {
           featureType: "water",
-          //elementType: "all",
           stylers: [
             { hue: "#005eff" },
             { saturation: 67 }
