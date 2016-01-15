@@ -1,0 +1,175 @@
+
+body {
+  margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: #262626;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    line-height: 15px;
+    margin: 0;
+}
+
+
+select.dropdown {
+	position: relative;
+	top: 10px;
+	width: 300px;
+}
+
+
+select:focus {
+    border: 1px solid #888;
+    outline: 0; 
+}
+
+/* Map */
+
+#map-canvas {
+    height: 80%;
+    height: -moz-calc(100% - 80px - 45px);
+    height: -webkit-calc(100% - 80px - 45px);
+    height: -o-calc(100% - 80px - 45px);
+    height: calc(100% - 80px - 45px); /* 100% minus header and footer height */
+    width: 100%;
+}
+
+/* InfoWindows */
+
+.infowindow {
+    font-weight: 400;
+}
+
+.infowindow table {
+    width: 100%;
+}
+
+.infowindow-header {
+    border-bottom: 1px solid lightgrey;
+    margin: 0 0 15px 0;
+    padding-bottom: 5px;
+}
+
+.infowindow h2 {
+    margin: 3px 0 1px 0;
+}
+
+.infowindow p {
+    margin: 0;
+}
+
+.infowindow th {
+    padding: 1px 0;
+}
+
+.infowindow thead tr {
+    height: 20px;
+    text-transform: uppercase;
+}
+
+thead .destination {
+    font-weight: 700;
+}
+
+.destination {
+    font-weight: 400;
+    text-align: left;
+    width: 150px;
+}
+
+.minutes {
+    font-weight: 700;
+    text-align: right;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #bbb;
+    bottom: 0;
+    color: #888;
+    font-size: 11px;
+    height: 45px;
+    padding: 17px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p {
+    line-height: 11px;
+    margin: 0;
+}
+
+.footer a {
+    color: #888;
+}
+
+span.glyphicon-size {
+    font-size: 2em;
+    position: relative;
+    top: 10px;
+}
+
+.help {
+	font-size: 25px;
+	color: #0099cc;
+	font-weight: bold;
+}
+
+/* Small screen */
+
+@media screen and (max-width: 760px) {
+
+    .header {
+        padding: 32px 9px 9px 9px;
+        text-align: right;
+    }
+
+    .site-title {
+        text-align: center;
+    }
+}
+
+/* Medium screen */
+
+@media screen and (max-width: 906px) {
+
+    .footer {
+        padding: 9px 17px;
+    }
+
+    .footer p {
+        line-height: 14px;
+    }
+}
