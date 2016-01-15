@@ -41,9 +41,9 @@ h1 a:hover {
 
 
 select.dropdown {
-	position: relative;
-	top: 10px;
-	width: 300px;
+    position: relative;
+    top: 10px;
+    width: 300px;
 }
 
 
@@ -142,9 +142,9 @@ span.glyphicon-size {
 }
 
 .help {
-	font-size: 25px;
-	color: #0099cc;
-	font-weight: bold;
+    font-size: 25px;
+    color: #0099cc;
+    font-weight: bold;
 }
 
 /* Small screen */
