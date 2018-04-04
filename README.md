@@ -1,4 +1,4 @@
-##BART
+## BART
 
 BART is Bay Area Rapid Transit. This webste is to implement the Bart, a mashup that allows users to visualize routes on a Google Map and also click stations to see when the next trains depart. This is projetc2 of Harvard summer class cs-75: buiding dynamic websites.
 
