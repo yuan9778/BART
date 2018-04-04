@@ -17,4 +17,4 @@ BART is Bay Area Rapid Transit. This webste is to implement the Bart, a mashup t
 * Javascript/JQuery/Ajax
 * BART API/Google Map Javascript API
 
-Try it out here: [BART](http://sanqingyuan.info/BARTL/)
+Try it out here: [BART](http://sanqingyuan.info/BART/)
